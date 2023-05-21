@@ -13,7 +13,6 @@
     <h2>1. INTRODUCTION GIT</h2>
     <p>Git adalah version control system paling populer. dibuat oleh Linus Torlvads pada tahun 2005. Dan telah dikelola oleh Junio Hamono sejak saat itu</p>
     <p>GIT mencatat setiap perubahan file di code atau sourcode kita</p>
-    <br>
     <h3>Manfaat GIT</h3>
     <ol>
         <li>Bisa menyimpan seluruh versi source code</li>
@@ -22,5 +21,66 @@
         <li>Memudahkan dalam tracking perubahan</li>
         <li>Memahami dalam deploy modern</li>
     </ol>
+    <br>
+    <h2>2. FUNDAMENTAL GIT</h2>
+    <p>Berisikan perintah-perintah yang digunakan untuk mengoperasikan GIT</p>
+    <h4>Beberapa perintah yang ada pada git : </h4>
+    <h4>Git --version</h4>
+    <p>Melihat version git yang digunakan</p>
+    <h4>Git init</h4>
+    <ul>
+        <li>Digunakan untuk menginisialisasi repository</li>
+        <li>Memberi tahu folder yang dijadikan repository</li>
+        <li>Kita tidak dapat menggunakan git, tanpa menginisialisasinya</li>
+    </ul>
+    <h4>Git config</h4>
+    <ul>
+        <li>Konfigurasi username dan useremail</li>
+        <li>Biasanya disamakan dengan akun gitlab / github</li>
+        <li>config global untuk konfigurasi ke server</li>
+        <li>Config local untuk konfigurasi local</li>
+    </ul>
+    <h4>Git config --list</h4>
+    <p>Untuk melihat semua konfigurasi yang ada di git</p>
+    <h4>Git status</h4>
+    <ul>
+        <li>Digunakan untuk mengetahui status file</li>
+        <li>Status file secara umum ada 3. Untracked, staging area, modified</li>
+    </ul>
+    <h4>Git add .</h4>
+    <ul>
+        <li>Untuk memasukkan file ke staging area</li>
+        <li>Penulisan : git add (nama_file) atau git add .</li>
+    </ul>
+    <h4>Git commit</h4>
+    <ul>
+        <li>Untuk mencatat perubahan yang dilakukan</li>
+        <li>Cara Penulisan : git commit -m "(comment / nama_perubahan)"</li>
+    </ul>
+    <h4>Git log</h4>
+    <ul>
+        <li>Untuk melihat riwayat commit, beserta comment yang pernah dilakukan</li>
+        <li>Tekan <b>q</b> untuk keluar dari log</li>
+    </ul>
+    <h4>Git clone</h4>
+    <ul>
+        <li>Digunakan untuk mengcopy repository dari server ke local</li>
+        <li>Cara Penulisan : git cloen "URL"</li>
+    </ul>
+    <h4>Git Push</h4>
+    <ul>
+        <li>Digunakan untuk mengirim commit ke server</li>
+        <li>Cara Penulisn : git push orign "nama_branch"</li>
+    </ul>
+    <h4>Git Remote</h4>
+    <ul>
+        <li>Semacam api untuk berinteraksi dari client dengan server</li>
+        <li>Cara Penulisn : git remote add origin "URL"</li>
+    </ul>
+    <h4>Git Pull</h4>
+    <ul>
+        <li>Untuk mengambil commit dari server jika ada perubahan diserver yang dibuat oleh branch lain</li>
+        <li>Cara Penulisn : git pull orign "nama_branch"</li>
+    </ul>
 </body>
 </html>
